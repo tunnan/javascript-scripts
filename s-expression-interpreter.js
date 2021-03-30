@@ -67,5 +67,6 @@ const lib = {
 	'div': (a, b) => a / b,
 }
 
-const result = interpret(parse(preprocess('(mul (add 2 (sub 15 2)) 2)')), lib);
-console.log(result);
+// Usage:
+// const result = interpret(parse(preprocess('(mul (add 2 (sub 15 2)) 2)')), lib);
+// console.log(result);

@@ -1,8 +1,6 @@
 // Type each character one by one to the given target element
 // with a delay. If a callback is passed, it will run when the
 // lines are done printing
-// 
-// eg: typeLines(document.querySelector('#textbox'), ['Foo', 'Bar'], 50)
 function typeLines(target, lines, delay, callback = null) {
 	// All lines have been printed
 	if (!lines.length) {
@@ -30,3 +28,6 @@ function typeLines(target, lines, delay, callback = null) {
 		typeLines(target, lines, delay, callback);
 	}, delay);
 }
+
+// Usage:
+// typeLines(document.querySelector('#textbox'), ['Foo', 'Bar'], 50)
